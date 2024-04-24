@@ -37,7 +37,7 @@ const NavBar = () => {
         {open && (
           <div className="absolute h-screen w-screen bg-black text-white top-0 left-0 text-semibold flex flex-col justify-center items-center gap-8 text-4xl z-40">
             {links.map((link) => (
-              <Link href={link.url} onClick={() => setOpen((prev)=>!prev)}>{link.title}</Link>
+              <Link href={link.url} onClick={() => setOpen((prev)=>!prev)}>{link.title.toUpperCase()}</Link>
             ))}
           </div>
         )}
