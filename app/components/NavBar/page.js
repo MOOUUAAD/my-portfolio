@@ -1,5 +1,5 @@
 "use client";
-import { animate, motion } from "framer-motion"
+import { animate, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/images/logo22.png";
@@ -15,7 +15,29 @@ const links = [
   { url: "/contact", title: "Contact" },
 ];
 
-const varLinks = {animate}
+const varNav = {
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.3,
+      staggerDirection: -1,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    transition: {
+      staggerChildren: 0.05,
+      when: "afterChildren",
+      staggerDirection: -1,
+    },
+  },
+};
+
+const varLink = {
+  visible: { opacity: 1, y: -40 },
+  hidden: { opacity: 0, y: 10 },
+};
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -28,20 +50,38 @@ const NavBar = () => {
       </div>
 
       <div className="hidden md:flex justify-center gap-10 font-semibold">
-        {links.map(link=><NavLinks link={link}/>)}
+        {links.map((link) => (
+          <NavLinks link={link} />
+        ))}
       </div>
 
       <div className="md:hidden ">
-        <button className="z-50 relative" onClick={() => setOpen((prev)=>!prev)}>
-          {open?<IoMdClose className="w-32 fill-white"/>:<TfiMenu className="w-32"/>}
+        <button
+          className="z-50 relative"
+          onClick={() => setOpen((prev) => !prev)}
+        >
+          {open ? (
+            <IoMdClose className="w-32 fill-white" />
+          ) : (
+            <TfiMenu className="w-32" />
+          )}
         </button>
 
         {open && (
-          <div className="absolute h-screen w-screen bg-black text-white top-0 left-0 text-semibold flex flex-col justify-center items-center gap-8 text-4xl z-40">
+          <motion.div
+            className="absolute h-screen w-screen bg-black text-white top-0 left-0 text-semibold flex flex-col justify-center items-center gap-8 text-4xl z-40"
+            initial="hidden"
+            animate={open ? "visible" : "hidden"}
+            variants={varNav}
+          >
             {links.map((link) => (
-              <Link href={link.url} onClick={() => setOpen((prev)=>!prev)}>{link.title.toUpperCase()}</Link>
+              <Link href={link.url} onClick={() => setOpen((prev) => !prev)}>
+                <motion.li variants={varLink} className="text-white list-none">
+                  {link.title.toUpperCase()}
+                </motion.li>
+              </Link>
             ))}
-          </div>
+          </motion.div>
         )}
       </div>
     </div>
