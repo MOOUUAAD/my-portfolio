@@ -15,7 +15,7 @@ const About = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="p-10 md:p-12 lg:p-20 xl:p-48 xl:pt-20 flex flex-col gap-20 xl:gap-40">
+      <div className="p-10 md:p-12 lg:p-20 xl:p-48 xl:pt-20 flex flex-col gap-20 xl:gap-32">
         <div className="mb-8">
           <h1 className="font-bold text-4xl py-4 text-center">ABOUT ME</h1>
           <p className="my-4 md:my-8 font-semibold">

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import hero from "/public/images/hero3.png";
@@ -7,9 +7,11 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <motion.div className="h-full" initial={{y:'-200vh'}}
-    animate={{y:'0%'}}
-    transition={{duration:1}}
+    <motion.div
+      className="h-full"
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}
     >
       <div className=" h-full flex flex-col justify-start lg:flex-row lg:justify-start lg:items-center px-6 md:px-12 lg:px-16 xl:px-20">
         <div className="h-1/2 relative lg:h-full lg:w-1/2 flex justify-center items-center z-0">
@@ -31,7 +33,7 @@ export default function Home() {
             <div className="mt-8">
               <Link
                 href="/about"
-                className="inline-block rounded bg-[#000000] px-12 py-3 text-sm text-white transition hover:bg-transparent hover:text-black duration-150 font-bold "
+                className="inline-block rounded bg-[#000000] px-12 py-3 text-sm text-white transition hover:bg-transparent hover:bg-blue-300 hover:text-black duration-200 font-bold "
               >
                 Know more
               </Link>

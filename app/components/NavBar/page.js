@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion"
+import { animate, motion } from "framer-motion"
 import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/images/logo22.png";
@@ -14,6 +14,8 @@ const links = [
   { url: "/projects", title: "Projects" },
   { url: "/contact", title: "Contact" },
 ];
+
+const varLinks = {animate}
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);

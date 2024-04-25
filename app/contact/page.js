@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-
+import Swal from 'sweetalert2'
 
 const Contact = () => {
   const [success, setSuccess] = useState(false);
@@ -13,8 +13,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setSuccess(false);
-    setError(false);
+
 
     emailjs
       .sendForm(
@@ -27,18 +26,26 @@ const Contact = () => {
       )
       .then(
         () => {
-          setSuccess(true);
+          Swal.fire({
+            title: "SUCCESS",
+            text: "Message sent successfully!",
+            icon: "success"
+          });
           form.current.reset()
         },
         (error) => {
-          setError(true);
+          Swal.fire({
+            title: "ERROR",
+            text: "Something went wrong!",
+            icon: "error"
+          });
         }
       );
   };
 
   return (
     <motion.div
-      classNameName="h-full overflow-y-scroll"
+      className="h-full overflow-y-scroll"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
@@ -59,11 +66,11 @@ const Contact = () => {
               <br />
               You can also email me at
               <a
-                href="mailto:mouad.elmaslouhi.2003@gmail.com"
+                href="mailto:mouad.elmaslouhi.24@gmail.com"
                 className="font-semibold text-sm border-b-4 border-green-400"
               >
                 {" "}
-                mouad.elmaslouhi.2003@gmail.com
+                mouad.elmaslouhi.24@gmail.com
               </a>
             </p>
             <p className="leading-relaxed text-xl  mt-6">
@@ -73,21 +80,21 @@ const Contact = () => {
               <a
                 className="text-gray-500 hover:"
                 target="_blank"
-                href="https://twitter.com/example"
+                href="https://github.com/MOOUUAAD"
               >
                 <FaGithub
                   size={24}
-                  classNameName="hover:scale-105 duration-150 hover:fill-zinc-500"
+                  className="hover:scale-105 duration-150 hover:fill-zinc-500"
                 />
               </a>
               <a
                 className="ml-3 text-gray-500 hover:"
-                href="https://www.instagram.com/example/"
+                href="https://www.linkedin.com/in/mouad-el-maslouhi-438038295/"
                 target="_blank"
               >
                 <FaLinkedin
                   size={24}
-                  classNameName="hover:scale-105 duration-150 hover:fill-blue-800"
+                  className="hover:scale-105 duration-150 hover:fill-blue-800"
                 />
               </a>
             </span>
@@ -111,7 +118,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="user_name"
-                    name="name"
+                    name="user_name"
                     required
                     className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none  py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
                   />
@@ -124,7 +131,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    id="email"
+                    id="user_email"
                     name="user_email"
                     required
                     className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none  py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
@@ -144,12 +151,6 @@ const Contact = () => {
                   ></textarea>
                 </div>
               </div>
-              {success && (
-                <p className="text-green-500">
-                  Message sent message sent successfully!
-                </p>
-              )}
-              {error && <p className="text-red-500">Something went wrong!</p>}
 
               <div className="p-2 w-full">
                 <button
