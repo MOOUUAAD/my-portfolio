@@ -12,12 +12,12 @@ const Projects = () => {
       transition={{ duration: 1 }}
     >
       <div id="projects" className="">
-        <h1 className="font-bold text-4xl py-3 text-center">My Work</h1>
         <div class="flex flex-wrap md:mx-40 justify-center mt-10">
           <ProjectCard
             title="Health Chatbot"
             description="first project"
-            image="/images/Health-ChatBot.png"
+            image="/images/1.png"
+            git="https://github.com/MOOUUAAD/Health-Chatbot-NIA"
             link="https://associaionnia.vercel.app/"
           />
 

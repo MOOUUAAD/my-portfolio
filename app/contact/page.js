@@ -1,13 +1,23 @@
 "use client";
-import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useState, useEffect } from "react";
+import {
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+  animate,
+} from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import Swal from 'sweetalert2'
 
+
+
+
 const Contact = () => {
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
+  const colors = ["#14e81e", "#00ea8d", "#017ed5", "#b53dff", "#8d00c4"];
+const color = useMotionValue(colors[0]);
+const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+
 
   const form = useRef();
 
@@ -43,7 +53,16 @@ const Contact = () => {
       );
   };
 
+  useEffect(() => {
+    animate(color, colors, {
+      ease: "easeInOut",
+      repeat: Infinity,
+      duration: 10,
+      repeatType: "mirror",
+    });
+  }, [])
   return (
+    
     <motion.div
       className="h-full overflow-y-scroll"
       initial={{ y: "-200vh" }}
@@ -56,7 +75,7 @@ const Contact = () => {
           id="contact-form"
         >
           <div className="md:w-1/3 w-full">
-            <h1 className="text-4xl3 sm:text-4xl font-bold title-font mb-3">
+            <h1 className="text-2xl sm:text-4xl font-bold title-font mb-3">
               Contact Me
             </h1>
             <p className="leading-relaxed text-xl ">
@@ -100,7 +119,7 @@ const Contact = () => {
             </span>
           </div>
           <div className="md:w-2/3 w-full mt-6 md:mt-0 md:pl-28">
-            <h1 className="text-4xl3 sm:text-4xl font-bold title-font mb-3">
+            <h1 className="text-2xl sm:text-4xl font-bold title-font mb-3">
               Contact Form
             </h1>
             <form
@@ -153,12 +172,13 @@ const Contact = () => {
               </div>
 
               <div className="p-2 w-full">
-                <button
+                <motion.button
+                style={{boxShadow}}
                   type="submit"
-                  className="flex text-white bg-black  px-12 py-2 text-xl transition  hover:text-black duration-200 font-bold border-0 focus:outline-none hover:bg-transparent rounded shadow-lg mx-0 flex-col text-center"
+                  className="flex text-white  px-12 py-2 text-xl transition duration-200 font-bold border-0 focus:outline-none hover:bg-transparent rounded-full shadow-lg mx-0 flex-col text-center"
                 >
                   Send Message ✉
-                </button>
+                </motion.button>
               </div>
             </form>
           </div>
