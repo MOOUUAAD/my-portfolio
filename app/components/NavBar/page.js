@@ -1,5 +1,5 @@
 "use client";
-import { animate, motion } from "framer-motion";
+import { animate, delay, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/images/logo22.png";
@@ -20,8 +20,7 @@ const varNav = {
     opacity: 1,
     transition: {
       when: "beforeChildren",
-      staggerChildren: 0.3,
-      staggerDirection: -1,
+      staggerChildren: 0.25,
     },
   },
   hidden: {
@@ -42,28 +41,25 @@ const varLink = {
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="h-full flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 z-50">
-      <div className="">
+    <div className="h-full flex justify-between items-center px-8 md:px-12 lg:px-16 xl:px-20">
+      <div className="z-10">
         <Link href="/">
           <Image src={logo} alt="logo" width={140} height={140} />
         </Link>
       </div>
 
-      <div className="hidden md:flex justify-center gap-10 font-semibold">
+      <div className="hidden md:flex justify-center gap-10 font-semibold z-10">
         {links.map((link) => (
           <NavLinks link={link} />
         ))}
       </div>
 
-      <div className="md:hidden ">
-        <button
-          className="z-50 relative"
-          onClick={() => setOpen((prev) => !prev)}
-        >
+      <div className="md:hidden">
+        <button className="relative z-50 px-4" onClick={() => setOpen((prev) => !prev)}>
           {open ? (
-            <IoMdClose className="w-32 fill-white" />
+            <IoMdClose className="  fill-white" size={26}/>
           ) : (
-            <TfiMenu className="w-32" />
+            <TfiMenu className="  fill-black" size={26}/>
           )}
         </button>
 

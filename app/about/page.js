@@ -4,13 +4,15 @@ import { motion, useInView } from "framer-motion";
 
 const About = () => {
   const toolsRef = useRef();
-  const toolsInView = useInView(toolsRef);
+  const toolsInView = useInView(toolsRef , {amount: 0.5 });
 
   const educationRef = useRef();
-  const educationInView = useInView(educationRef);
+  const educationInView = useInView(educationRef , {amount: 0.2});
+
+  
   return (
     <motion.div
-      className="h-full overflow-y-scroll"
+      className="h-full overflow-y-scroll overflow-x-hidden"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}

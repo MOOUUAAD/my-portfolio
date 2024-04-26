@@ -2,10 +2,28 @@
 
 import Image from "next/image";
 import hero from "/public/images/hero3.png";
-import { motion } from "framer-motion";
+import {
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+  animate,
+} from "framer-motion";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Home() {
+  const colors = ["#14e81e", "#00ea8d", "#017ed5", "#b53dff", "#8d00c4"];
+  const color = useMotionValue(colors[0]);
+  const border = useMotionTemplate`0.5px solid ${color}`;
+  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+  useEffect(() => {
+    animate(color, colors, {
+      ease: "easeInOut",
+      repeat: Infinity,
+      duration: 10,
+      repeatType: "mirror",
+    });
+  }, []);
   return (
     <motion.div
       className="h-full"
@@ -14,7 +32,7 @@ export default function Home() {
       transition={{ duration: 1 }}
     >
       <div className=" h-full flex flex-col justify-start lg:flex-row lg:justify-start lg:items-center px-6 md:px-12 lg:px-16 xl:px-20">
-        <div className="h-1/2 relative lg:h-full lg:w-1/2 flex justify-center items-center z-0">
+        <div className="h-1/2 relative lg:h-full lg:w-1/2 flex justify-center items-center">
           <Image src={hero} alt="" className=" object-contain" fill />
         </div>
 
@@ -22,21 +40,25 @@ export default function Home() {
           <div className="mx-auto max-w-xl ltr:sm:text-left rtl:sm:text-right">
             <span className="font-semibold">Hi, my name is</span>
             <h2 className="text-4xl font-bold mb-2  md:text-6xl">MOUAD</h2>
-
-            <p className="text-lg font-semibold my-6">
-              Step into my digital playground! As a frontend developer, I have a
-              passion for crafting visually stunning and user-friendly digital
-              experiences. Let's collaborate to create something extraordinary
-              together!
+            <span className="text-lg font-semibold my-6">
+              Step into my digital playground!
+            </span>
+            <p className="">
+              As a frontend developer, I have a passion for crafting visually
+              stunning and user-friendly digital experiences. Let's collaborate
+              to create something extraordinary together!
             </p>
 
-            <div className="mt-8">
-              <Link
-                href="/about"
-                className="inline-block rounded bg-[#000000] px-12 py-3 text-sm text-white transition hover:bg-transparent hover:bg-blue-300 hover:text-black duration-200 font-bold "
+            <div className="mt-8 flex relative z-10">
+              <motion.button
+                style={{ boxShadow, border }}
+                className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer `}
               >
-                Know more
-              </Link>
+                <Link href="/about" className="relative top-0 z-10">
+                  Know more
+                </Link>
+              </motion.button>
+              
             </div>
           </div>
         </div>

@@ -67,7 +67,7 @@ const Contact = () => {
               You can also email me at
               <a
                 href="mailto:mouad.elmaslouhi.24@gmail.com"
-                className="font-semibold text-sm border-b-4 border-green-400"
+                className="font-semibold text-sm border-b-2 border-green-400"
               >
                 {" "}
                 mouad.elmaslouhi.24@gmail.com
@@ -126,8 +126,8 @@ const Contact = () => {
               </div>
               <div className="p-2 w-full">
                 <div className="relative">
-                  <label for="email" className="leading-7 py-4 text-lg ">
-                    Your Email
+                <label for="email" className="leading-7 py-4 text-lg ">
+                    Your Name
                   </label>
                   <input
                     type="email"
