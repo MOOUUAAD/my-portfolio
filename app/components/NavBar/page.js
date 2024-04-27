@@ -3,7 +3,7 @@ import { animate, delay, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/images/logo.png";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 import { IoMdClose } from "react-icons/io";
 import NavLinks from "../NavLinks/page";
@@ -40,6 +40,7 @@ const varLink = {
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+
   return (
     <div className="h-full flex justify-between items-center px-8 md:px-12 lg:px-16 xl:px-20">
       <div className="z-10">
@@ -49,17 +50,22 @@ const NavBar = () => {
       </div>
 
       <div className="hidden md:flex justify-center gap-10 font-semibold z-10">
-        {links.map((link,index) => (
-          <NavLinks key={index} link={link} />
-        ))}
+        <Suspense fallback={<>Loading...</>}>
+          {links.map((link, index) => (
+            <NavLinks key={index} link={link} />
+          ))}
+        </Suspense>
       </div>
 
       <div className="md:hidden">
-        <button className="relative z-50 px-4" onClick={() => setOpen((prev) => !prev)}>
+        <button
+          className="relative z-50 px-4"
+          onClick={() => setOpen((prev) => !prev)}
+        >
           {open ? (
-            <IoMdClose className="  fill-white" size={26}/>
+            <IoMdClose className="  fill-white" size={26} />
           ) : (
-            <TfiMenu className="  fill-black" size={26}/>
+            <TfiMenu className="  fill-black" size={26} />
           )}
         </button>
 
