@@ -9,7 +9,7 @@ import { IoMdClose } from "react-icons/io";
 // import NavLinks from "../NavLinks/page";
 import { usePathname } from "next/navigation";
 
-const links = [
+const linkTitle = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About" },
   { url: "/projects", title: "Projects" },
@@ -53,7 +53,7 @@ const NavBar = () => {
 
       <div className="hidden md:flex justify-center gap-10 font-semibold z-10">
         <Suspense fallback={<>Loading...</>}>
-          {links.map((link, index) => (
+          {linkTitle.map((link, index) => (
             <Link
               key={index}
               href={link.url}
@@ -86,7 +86,7 @@ const NavBar = () => {
             animate={open ? "visible" : "hidden"}
             variants={varNav}
           >
-            {links.map((link) => (
+            {linkTitle.map((link) => (
               <Link href={link.url} onClick={() => setOpen((prev) => !prev)}>
                 <motion.li variants={varLink} className="text-white list-none">
                   {link.title.toUpperCase()}
