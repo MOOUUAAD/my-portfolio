@@ -3,13 +3,12 @@ import { animate, delay, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/images/logo.png";
-import React, { Suspense, useState } from "react";
+import React, { useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 import { IoMdClose } from "react-icons/io";
-// import NavLinks from "../NavLinks/page";
-import { usePathname } from "next/navigation";
+import NavLinks from "../NavLinks/page";
 
-const linkTitle = [
+const links = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About" },
   { url: "/projects", title: "Projects" },
@@ -40,7 +39,6 @@ const varLink = {
 };
 
 const NavBar = () => {
-  const pathName = usePathname();
   const [open, setOpen] = useState(false);
 
   return (
@@ -52,19 +50,9 @@ const NavBar = () => {
       </div>
 
       <div className="hidden md:flex justify-center gap-10 font-semibold z-10">
-        <Suspense fallback={<>Loading...</>}>
-          {linkTitle.map((link, index) => (
-            <Link
-              key={index}
-              href={link.url}
-              className={`hover:bg-black hover:text-white duration-150 px-4 py-2 rounded-full ${
-                pathName == link.url && "bg-black text-white"
-              }`}
-            >
-              {link.title}
-            </Link>
-          ))}
-        </Suspense>
+        {links.map((link, index) => (
+          <NavLinks key={index} link={link} />
+        ))}
       </div>
 
       <div className="md:hidden">
@@ -86,7 +74,7 @@ const NavBar = () => {
             animate={open ? "visible" : "hidden"}
             variants={varNav}
           >
-            {linkTitle.map((link) => (
+            {links.map((link) => (
               <Link href={link.url} onClick={() => setOpen((prev) => !prev)}>
                 <motion.li variants={varLink} className="text-white list-none">
                   {link.title.toUpperCase()}
