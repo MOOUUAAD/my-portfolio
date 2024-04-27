@@ -6,7 +6,8 @@ import logo from "/public/images/logo.png";
 import React, { Suspense, useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 import { IoMdClose } from "react-icons/io";
-import NavLinks from "../NavLinks/page";
+// import NavLinks from "../NavLinks/page";
+import { usePathname } from "next/navigation";
 
 const links = [
   { url: "/", title: "Home" },
@@ -39,6 +40,7 @@ const varLink = {
 };
 
 const NavBar = () => {
+  const pathName = usePathname();
   const [open, setOpen] = useState(false);
 
   return (
@@ -52,7 +54,15 @@ const NavBar = () => {
       <div className="hidden md:flex justify-center gap-10 font-semibold z-10">
         <Suspense fallback={<>Loading...</>}>
           {links.map((link, index) => (
-            <NavLinks key={index} link={link} />
+            <Link
+              key={index}
+              href={link.url}
+              className={`hover:bg-black hover:text-white duration-150 px-4 py-2 rounded-full ${
+                pathName == link.url && "bg-black text-white"
+              }`}
+            >
+              {link.title}
+            </Link>
           ))}
         </Suspense>
       </div>
