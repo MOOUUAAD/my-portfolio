@@ -12,6 +12,8 @@ import { usePathname } from "next/navigation";
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
+
+
 const Transition = ({ children }) => {
   const pathName = usePathname();
   const colors = ["#14e81e", "#00ea8d", "#017ed5", "#b53dff", "#8d00c4"];
