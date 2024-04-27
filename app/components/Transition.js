@@ -24,7 +24,7 @@ const Transition = ({ children }) => {
       duration: 10,
       repeatType: "mirror",
     });
-  }, []);
+  }, [pathName]);
   return (
     <AnimatePresence mode="wait">
       <motion.div
