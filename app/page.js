@@ -10,8 +10,10 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Home() {
+  const pathName = usePathname()
   const colors = ["#14e81e", "#00ea8d", "#017ed5", "#b53dff", "#8d00c4"];
   const color = useMotionValue(colors[0]);
   const border = useMotionTemplate`0.5px solid ${color}`;
@@ -23,7 +25,7 @@ export default function Home() {
       duration: 10,
       repeatType: "mirror",
     });
-  }, []);
+  }, [pathName]);
   return (
     <motion.div
       className="h-full"
