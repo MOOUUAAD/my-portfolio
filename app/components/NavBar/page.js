@@ -50,9 +50,9 @@ const NavBar = () => {
       </div>
 
       <div className="hidden md:flex justify-center gap-10 font-semibold z-10">
-        {links.map((link, index) => (
-          <NavLinks key={index} link={link} />
-        ))}
+        {/* {links.map((link, index) => ( */}
+        <NavLinks />
+        {/* ))} */}
       </div>
 
       <div className="md:hidden">
