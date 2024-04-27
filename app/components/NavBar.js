@@ -6,7 +6,7 @@ import logo from "/public/images/logo.png";
 import React, { useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 import { IoMdClose } from "react-icons/io";
-import NavLinks from "../NavLinks";
+import NavLinks from "./Navlinks";
 
 const links = [
   { url: "/", title: "Home" },

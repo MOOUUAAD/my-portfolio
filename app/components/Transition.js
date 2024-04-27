@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import NavBar from "../NavBar";
+import NavBar from "./NavBar";
 import {
   motion,
   AnimatePresence,
@@ -11,8 +11,6 @@ import {
 import { usePathname } from "next/navigation";
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-
-
 
 const Transition = ({ children }) => {
   const pathName = usePathname();

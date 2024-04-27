@@ -1,8 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Transition from "./components/Transition/page";
-import { Stars } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import Transition from "./components/Transition";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
