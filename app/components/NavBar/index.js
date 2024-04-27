@@ -6,7 +6,7 @@ import logo from "/public/images/logo.png";
 import React, { useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 import { IoMdClose } from "react-icons/io";
-import NavLinks from "../NavLinks/page";
+import NavLinks from "../NavLinks";
 
 const links = [
   { url: "/", title: "Home" },
@@ -50,9 +50,9 @@ const NavBar = () => {
       </div>
 
       <div className="hidden md:flex justify-center gap-10 font-semibold z-10">
-        {/* {links.map((link, index) => ( */}
-        <NavLinks />
-        {/* ))} */}
+        {links.map((link, index) => (
+          <NavLinks key={index} link={link} />
+        ))}
       </div>
 
       <div className="md:hidden">

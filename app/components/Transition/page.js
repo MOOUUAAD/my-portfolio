@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import NavBar from "../NavBar/page";
+import NavBar from "../NavBar";
 import {
   motion,
   AnimatePresence,
