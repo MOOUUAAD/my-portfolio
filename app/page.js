@@ -33,7 +33,7 @@ export default function Home() {
     >
       <div className=" h-full flex flex-col justify-start lg:flex-row lg:justify-start lg:items-center px-6 md:px-12 lg:px-16 xl:px-20">
         <div className="h-1/2 relative lg:h-full lg:w-1/2 flex justify-center items-center">
-          <Image src={hero} alt="" className=" object-contain" fill />
+          <Image src={hero} alt="hero" width="auto" height="auto" className=" object-contain "/>
         </div>
 
         <div className="h-1/2 gap-8 flex flex-col justify-start lg:justify-center lg:h-full lg:w-1/2 text-black">
@@ -52,7 +52,7 @@ export default function Home() {
             <div className="mt-8 flex relative z-10">
               <motion.button
                 style={{ boxShadow, border }}
-                className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer `}
+                className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
               >
                 <Link href="/about" className="relative top-0 z-10">
                   Know more

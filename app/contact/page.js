@@ -8,22 +8,17 @@ import {
 } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-import Swal from 'sweetalert2'
-
-
-
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const colors = ["#14e81e", "#00ea8d", "#017ed5", "#b53dff", "#8d00c4"];
-const color = useMotionValue(colors[0]);
-const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
-
+  const color = useMotionValue(colors[0]);
+  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
 
     emailjs
       .sendForm(
@@ -39,15 +34,15 @@ const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
           Swal.fire({
             title: "SUCCESS",
             text: "Message sent successfully!",
-            icon: "success"
+            icon: "success",
           });
-          form.current.reset()
+          form.current.reset();
         },
         (error) => {
           Swal.fire({
             title: "ERROR",
             text: "Something went wrong!",
-            icon: "error"
+            icon: "error",
           });
         }
       );
@@ -60,9 +55,8 @@ const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
       duration: 10,
       repeatType: "mirror",
     });
-  }, [])
+  }, []);
   return (
-    
     <motion.div
       className="h-full overflow-y-scroll"
       initial={{ y: "-200vh" }}
@@ -79,8 +73,8 @@ const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
               Contact Me
             </h1>
             <p className="leading-relaxed text-xl ">
-              We're here to assist you! If you have any questions or need
-              assistance, please feel free to reach out to us.
+              Feel free to reach out to me! Whether you have a question,
+              feedback, or a collaboration proposal, I'd love to hear from you.
               <br />
               <br />
               You can also email me at
@@ -145,7 +139,7 @@ const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
               </div>
               <div className="p-2 w-full">
                 <div className="relative">
-                <label for="email" className="leading-7 py-4 text-lg ">
+                  <label for="email" className="leading-7 py-4 text-lg ">
                     Your Name
                   </label>
                   <input
@@ -173,11 +167,11 @@ const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
 
               <div className="p-2 w-full">
                 <motion.button
-                style={{boxShadow}}
+                  style={{ boxShadow }}
                   type="submit"
                   className="flex text-white  px-12 py-2 text-xl transition duration-200 font-bold border-0 focus:outline-none hover:bg-transparent rounded-full shadow-lg mx-0 flex-col text-center"
                 >
-                  Send Message ✉
+                  Send Message
                 </motion.button>
               </div>
             </form>

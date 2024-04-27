@@ -16,7 +16,7 @@ const Transition = ({ children }) => {
   const pathName = usePathname();
   const colors = ["#14e81e", "#00ea8d", "#017ed5", "#b53dff", "#8d00c4"];
   const color = useMotionValue(colors[0]);
-  const backgroundImage = useMotionTemplate`radial-gradient(128% 128% at 50% 120%, #020617 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(150% 150% at 50% 115%, #000000 40%, ${color})`;
   useEffect(() => {
     animate(color, colors, {
       ease: "easeInOut",
@@ -63,7 +63,7 @@ const Transition = ({ children }) => {
         <div className="relative z-10 h-[calc(100vh-96px)]">{children}</div>
         <div className="absolute inset-0 z-0">
           <Canvas>
-            <Stars radius={50} count={3000} factor={2} fade speed={2} />
+            <Stars radius={50} count={4000} factor={2} fade speed={1.5} />
           </Canvas>
         </div>
       </motion.div>

@@ -7,7 +7,7 @@ const About = () => {
   const toolsInView = useInView(toolsRef , {amount: 0.5 });
 
   const educationRef = useRef();
-  const educationInView = useInView(educationRef , {amount: 0.2});
+  const educationInView = useInView(educationRef , {amount: 0.5});
 
   
   return (
@@ -17,7 +17,7 @@ const About = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="p-10 md:p-12 lg:p-20 xl:p-48 xl:pt-20 flex flex-col gap-20 xl:gap-32">
+      <div className="p-12 lg:p-20 xl:p-28 xl:pb-3 pt-20 flex flex-col justify-between gap-40 ">
         <div className="mb-8">
           <h1 className="font-bold text-4xl py-4 text-center">ABOUT ME</h1>
           <p className="my-4 md:my-8 font-semibold">
@@ -84,15 +84,15 @@ const About = () => {
               </div>
               <motion.div
                 className="timeline-start md:text-end mb-10"
-                initial={{ x: "200px" }}
-                animate={educationInView ? { x: 0 } : {}}
+                initial={{ y: "1000px" }}
+                animate={educationInView ? { y: 0 } : {}}
                 transition={{ delay: 0.35 }}
               >
                 <time className="font-mono italic">2021</time>
                 <div className="text-lg font-black">
                   Baccalaureat Sciences Maths
                 </div>
-                Lycee Abi Abbas Sebti
+                Lycee Abi Abbas Sebti - Tanger
               </motion.div>
               <hr />
             </li>
@@ -115,8 +115,8 @@ const About = () => {
               </div>
               <motion.div
                 className="timeline-end mb-10"
-                initial={{ x: "200px" }}
-                animate={educationInView ? { x: 0 } : {}}
+                initial={{ y: "1000px" }}
+                animate={educationInView ? { y: 0 } : {}}
                 transition={{ delay: 0.45 }}
               >
                 <time className="font-mono italic">2022-2023</time>
@@ -143,15 +143,15 @@ const About = () => {
               </div>
               <motion.div
                 className="timeline-start md:text-end mb-10"
-                initial={{ x: "200px" }}
-                animate={educationInView ? { x: 0 } : {}}
+                initial={{ y: "1000px" }}
+                animate={educationInView ? { y: 0 } : {}}
                 transition={{ delay: 0.55 }}
               >
                 <time className="font-mono italic">2023-2026</time>
                 <div className="text-lg font-black">
-                  Computer science & Digitalisation
+                  Computer science and Digitalisation
                 </div>
-                Ecole Mohammadia d'Ingenieurs
+                Ecole Mohammadia d'Ingenieurs - Rabat
               </motion.div>
             </li>
           </ul>
