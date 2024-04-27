@@ -26,7 +26,7 @@ const Projects = () => {
             description="Responsive website for movies recommendations"
             image="/images/Movies-Recommendations.png"
             git="https://github.com/MOOUUAAD/Movies-Recommendations-website/blob/main/README.md"
-            link="https://moouuaad.github.io/Movies-Recommendations-website/?#"
+            link="https://movies-recommendations.vercel.app/"
           />
 
           <ProjectCard
@@ -34,6 +34,7 @@ const Projects = () => {
             description="Simple responsive landing page clone for Mercedes-AMG"
             image="/images/Mercedes-AMG.png"
             git="https://github.com/MOOUUAAD/Mercedes-AMG/blob/main/README.md"
+            link="https://mercedes-amg.vercel.app/"
           />
 
           <ProjectCard
