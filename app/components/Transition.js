@@ -63,7 +63,7 @@ const Transition = ({ children }) => {
         <div className="relative z-10 h-[calc(100vh-96px)]">{children}</div>
         <div className="absolute inset-0 z-0">
           <Canvas>
-            <Stars radius={50} count={2000} factor={2} fade speed={1.5} />
+            <Stars radius={45} count={2000} factor={2} fade speed={1.5} />
           </Canvas>
         </div>
       </motion.div>
