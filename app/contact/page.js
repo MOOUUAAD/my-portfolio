@@ -11,7 +11,7 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
 const Contact = () => {
-  const NEXT_PUBLIC_KEY="--HpZs7RM3RgsCDcG"
+
   const colors = ["#14e81e", "#00ea8d", "#017ed5", "#b53dff", "#8d00c4"];
   const color = useMotionValue(colors[0]);
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
@@ -27,7 +27,7 @@ const Contact = () => {
         process.env.NEXT_PUBLIC_TEMPLATE_ID,
         form.current,
         {
-          publicKey: NEXT_PUBLIC_KEY,
+          publicKey: process.env.NEXT_PUBLIC_KEY,
         }
       )
       .then(
