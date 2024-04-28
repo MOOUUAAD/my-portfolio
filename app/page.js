@@ -31,7 +31,7 @@ export default function Home() {
       className="h-full"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
-      transition={{ duration: 1 }}
+      transition={{ delay:0.5, duration: 1 }}
     >
       <div className=" h-full flex flex-col justify-start lg:flex-row lg:justify-start lg:items-center px-6 md:px-12 lg:px-16 xl:px-20">
         <div className="h-1/2 relative lg:h-full lg:w-1/2 flex justify-center items-center">
