@@ -15,7 +15,7 @@ const About = () => {
       className="h-full overflow-y-scroll overflow-x-hidden"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
-      transition={{ duration: 1 }}
+      transition={{ delay:0.5, duration: 1 }}
     >
       <div className="p-12 lg:p-20 xl:p-28 xl:pb-3 pt-20 flex flex-col justify-between gap-40 ">
         <div className="mb-8">

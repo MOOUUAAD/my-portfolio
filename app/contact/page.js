@@ -61,7 +61,7 @@ const Contact = () => {
       className="h-full overflow-y-scroll"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
-      transition={{ duration: 1 }}
+      transition={{ delay:0.5,duration: 1 }}
     >
       <section className="">
         <div
