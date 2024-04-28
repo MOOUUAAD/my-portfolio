@@ -36,7 +36,7 @@ const Transition = ({ children }) => {
           className="h-screen w-screen fixed bg-black rounded-b-[100px] z-20"
           animate={{ height: "0vh" }}
           exit={{ height: "140vh" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
         />
         <motion.div
           className=" fixed top-0 right-0 left-0 bottom-0 m-auto text-black bg-white font-bold w-full text-center h-20 flex justify-center items-center text-4xl z-30"
@@ -55,7 +55,7 @@ const Transition = ({ children }) => {
           className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-20"
           initial={{ height: "140vh" }}
           animate={{ height: "0vh" }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 1 }}
         />
         <div className="h-24">
           <NavBar />
