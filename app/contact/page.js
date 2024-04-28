@@ -122,7 +122,7 @@ const Contact = () => {
               id="submit-contact-form"
               ref={form}
               onSubmit={sendEmail}
-              className="text-black"
+              
             >
               <div className="p-2 w-full">
                 <div className="relative">
@@ -134,7 +134,7 @@ const Contact = () => {
                     id="user_name"
                     name="user_name"
                     required
-                    className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none  py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
+                    className="w-full text-black bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none  py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
                   />
                 </div>
               </div>
@@ -148,7 +148,7 @@ const Contact = () => {
                     id="user_email"
                     name="user_email"
                     required
-                    className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none  py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
+                    className="w-full text-black bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none  py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
                   />
                 </div>
               </div>
@@ -161,7 +161,7 @@ const Contact = () => {
                     id="message"
                     name="user_message"
                     required
-                    className="w-full bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none  py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "
+                    className="w-full text-black bg-white rounded border border-gray-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none  py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "
                   ></textarea>
                 </div>
               </div>
