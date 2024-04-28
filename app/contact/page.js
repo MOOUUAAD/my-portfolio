@@ -39,6 +39,7 @@ const Contact = () => {
           form.current.reset();
         },
         (error) => {
+          console.log(error);
           Swal.fire({
             title: "ERROR",
             text: "Something went wrong!",
