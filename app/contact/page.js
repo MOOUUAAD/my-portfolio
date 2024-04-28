@@ -122,6 +122,7 @@ const Contact = () => {
               id="submit-contact-form"
               ref={form}
               onSubmit={sendEmail}
+              className="text-black"
             >
               <div className="p-2 w-full">
                 <div className="relative">
