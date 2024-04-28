@@ -141,7 +141,7 @@ const Contact = () => {
               <div className="p-2 w-full">
                 <div className="relative">
                   <label for="email" className="leading-7 py-4 text-lg ">
-                    Your Name
+                    Your Email
                   </label>
                   <input
                     type="email"
