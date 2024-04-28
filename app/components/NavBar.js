@@ -63,7 +63,7 @@ const NavBar = () => {
           {open ? (
             <IoMdClose className="  fill-white" size={26} />
           ) : (
-            <TfiMenu className="  fill-black" size={26} />
+            <TfiMenu className="  fill-white" size={26} />
           )}
         </button>
 
