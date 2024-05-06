@@ -53,7 +53,7 @@ export default function Home() {
               to create something extraordinary together!
             </p>
 
-            <div className="mt-8 flex gap-5 relative z-10">
+            <div className="mt-8 flex gap-6 relative z-10">
             <motion.button
                 style={{ backgroundColor }}
                 className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
