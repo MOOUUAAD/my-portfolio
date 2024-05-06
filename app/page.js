@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import cv from "/public/images/cv.pdf"
 import hero from "/public/images/hero3.png";
 import {
   motion,
@@ -52,14 +53,13 @@ export default function Home() {
               to create something extraordinary together!
             </p>
 
-            <div className="mt-8 flex relative z-10">
+            <div className="mt-8 flex gap-4 relative z-10">
             <motion.button
                 style={{ backgroundColor }}
                 className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
               >
-                <Link href="/about" className="relative top-0 z-10">
-                  Download CV
-                </Link>
+                <a className="relative top-0 z-10" href={cv} download>Download CV</a>
+
               </motion.button>
               <motion.button
                 style={{ boxShadow, border }}
