@@ -59,7 +59,7 @@ export default function Home() {
                 className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
               >
                 {/* <a className="relative top-0 z-10" href={cv} download>Download CV</a> */}
-                <Link className="relative top-0 z-10"  href={'public/files/cv.pdf'}  target="_blank"  rel="noopener noreferrer" locale={false} download>Download CV</Link>
+                <Link className="relative top-0 z-10"  href={'/files/cv.pdf'}  target="_blank"  rel="noopener noreferrer" download>Download CV</Link>
 
               </motion.button>
               <motion.button
