@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-// import cv from "/public/images/cv.pdf"
+import cv from "/public/images/cv.pdf"
 import hero from "/public/images/hero3.png";
 import {
   motion,
@@ -59,6 +59,7 @@ export default function Home() {
                 className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
               >
                 {/* <a className="relative top-0 z-10" href={cv} download>Download CV</a> */}
+                <Link className="relative top-0 z-10"  href={cv}  target="_blank"  rel="noopener noreferrer" locale={false} download>Download CV</Link>
 
               </motion.button>
               <motion.button
