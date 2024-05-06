@@ -18,6 +18,7 @@ export default function Home() {
   const color = useMotionValue(colors[0]);
   const border = useMotionTemplate`0.5px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+  const backgroundColor = useMotionTemplate`${color}`;
   useEffect(() => {
     animate(color, colors, {
       ease: "easeInOut",
@@ -52,6 +53,14 @@ export default function Home() {
             </p>
 
             <div className="mt-8 flex relative z-10">
+            <motion.button
+                style={{ backgroundColor }}
+                className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
+              >
+                <Link href="/about" className="relative top-0 z-10">
+                  Download CV
+                </Link>
+              </motion.button>
               <motion.button
                 style={{ boxShadow, border }}
                 className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
