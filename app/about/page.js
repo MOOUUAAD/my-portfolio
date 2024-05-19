@@ -38,7 +38,7 @@ const About = () => {
         <div className="my-8" ref={toolsRef}>
           <motion.h2
             className="font-bold text-4xl py-4 text-center"
-            initial={{ x: "-1000px" }}
+            initial={{ x: "-100%" }}
             animate={toolsInView ? { x: 0 } : {}}
             transition={{ delay: 0.2 }}
           >
@@ -47,7 +47,7 @@ const About = () => {
           <motion.div
             align="center"
             className="my-4 md:my-8"
-            initial={{ x: "-1000px" }}
+            initial={{ x: "-100%" }}
             animate={toolsInView ? { x: 0 } : {}}
             transition={{ delay: 0.3 }}
           >
