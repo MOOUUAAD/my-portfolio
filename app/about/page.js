@@ -60,7 +60,7 @@ const About = () => {
         <div className="my-14" ref={educationRef}>
           <motion.h1
             className="font-bold text-4xl py-4 text-center"
-            initial={{ x: "-1000px" }}
+            initial={{ x: "-130%" }}
             animate={educationInView ? { x: 0 } : {}}
             transition={{ delay: 0.2 }}
           >
@@ -84,7 +84,7 @@ const About = () => {
               </div>
               <motion.div
                 className="timeline-start md:text-end mb-10"
-                initial={{ y: "1000px" }}
+                initial={{ y: "140%" }}
                 animate={educationInView ? { y: 0 } : {}}
                 transition={{ delay: 0.35 }}
               >
@@ -115,7 +115,7 @@ const About = () => {
               </div>
               <motion.div
                 className="timeline-end mb-10"
-                initial={{ y: "1000px" }}
+                initial={{ y: "140%" }}
                 animate={educationInView ? { y: 0 } : {}}
                 transition={{ delay: 0.45 }}
               >
