@@ -143,7 +143,7 @@ const About = () => {
               </div>
               <motion.div
                 className="timeline-start md:text-end mb-10"
-                initial={{ y: "1000px" }}
+                initial={{ y: "140%" }}
                 animate={educationInView ? { y: 0 } : {}}
                 transition={{ delay: 0.55 }}
               >
