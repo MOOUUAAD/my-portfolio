@@ -56,7 +56,7 @@ export default function Home() {
             <div className="mt-8 flex gap-5 relative z-10">
             <motion.button
                 style={{ backgroundColor }}
-                className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
+                className={`inline-block rounded-full px-5 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
               >
 
                 <Link className="relative top-0 z-10"  href={'/files/MyCV.pdf'}  target="_blank"  rel="noopener noreferrer" download>Download CV</Link>
@@ -64,7 +64,7 @@ export default function Home() {
               </motion.button>
               <motion.button
                 style={{ boxShadow, border }}
-                className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
+                className={`inline-block rounded-full px-5 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
               >
                 <Link href="/projects" className="relative top-0 z-10">
                   View Projects
