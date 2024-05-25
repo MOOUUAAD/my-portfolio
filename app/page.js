@@ -66,8 +66,8 @@ export default function Home() {
                 style={{ boxShadow, border }}
                 className={`inline-block rounded-full px-6 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
               >
-                <Link href="/about" className="relative top-0 z-10">
-                  Know more
+                <Link href="/projects" className="relative top-0 z-10">
+                  View Projects
                 </Link>
               </motion.button>
               
