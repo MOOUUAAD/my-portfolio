@@ -4,18 +4,17 @@ import { motion, useInView } from "framer-motion";
 
 const About = () => {
   const toolsRef = useRef();
-  const toolsInView = useInView(toolsRef , {amount: 0.5 });
+  const toolsInView = useInView(toolsRef, { amount: 0.5 });
 
   const educationRef = useRef();
-  const educationInView = useInView(educationRef , {amount: 0.5});
+  const educationInView = useInView(educationRef, { amount: 0.5 });
 
-  
   return (
     <motion.div
       className="h-full overflow-y-scroll overflow-x-hidden"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
-      transition={{ delay:0.5, duration: 1 }}
+      transition={{ delay: 0.5, duration: 1 }}
     >
       <div className="p-12 lg:p-20 xl:p-28 xl:pb-3 pt-20 flex flex-col justify-between gap-40 ">
         <div className="mb-8">
@@ -51,9 +50,9 @@ const About = () => {
             animate={toolsInView ? { x: 0 } : {}}
             transition={{ delay: 0.3 }}
           >
-            <img src="https://skillicons.dev/icons?i=next,react,tailwind,bootstrap,html,css,javascript" />
+            <img src="https://skillicons.dev/icons?i=next,react,tailwind,bootstrap,html,css,javascript,figma" />
             <br />
-            <img src="https://skillicons.dev/icons?i=vite,typescript,firebase,c,mysql,git,github" />
+            <img src="https://skillicons.dev/icons?i=vite,typescript,nodejs,firebase,c,mysql,git,github" />
           </motion.div>
         </div>
 
