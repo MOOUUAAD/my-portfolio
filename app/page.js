@@ -54,14 +54,14 @@ export default function Home() {
             </p>
 
             <div className="mt-8 flex gap-5 relative z-10">
-            <motion.button
+            {/* <motion.button
                 style={{ backgroundColor }}
                 className={`inline-block rounded-full px-5 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
               >
 
                 <Link className="relative top-0 z-10"  href={'/files/MouadElMaslouhiCV.pdf'}  target="_blank"  rel="noopener noreferrer" download>Download CV</Link>
 
-              </motion.button>
+              </motion.button> */}
               <motion.button
                 style={{ boxShadow, border }}
                 className={`inline-block rounded-full px-5 py-3 bg-black transition duration-200 font-bold cursor-pointer`}
