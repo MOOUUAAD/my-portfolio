@@ -20,17 +20,10 @@ const About = () => {
         <div className="mb-8">
           <h1 className="font-bold text-4xl py-4 text-center">ABOUT ME</h1>
           <p className="my-4 md:my-8 font-semibold">
-            Driven by a passion for elegant design and clean code, I've spent
-            this year perfecting my craft in the realm of frontend development.
-            Armed with a toolkit that includes HTML, CSS, JavaScript, React Js,
-            Next Js.... I specialize in transforming concepts into captivating
-            user interfaces that leave a lasting impression.
+          Driven by a passion for elegant design, clean code, and scalable cloud solutions, I've spent this year sharpening my full-stack development skills while expanding into cloud technologies. With a strong foundation in Tailwind CSS, JavaScript, React.js, Next.js, and Node.js — and hands-on experience deploying full-stack applications using AWS — I specialize in transforming ideas into seamless, responsive, and visually engaging user experiences backed by robust cloud infrastructures.
           </p>
           <p className="my-4 font-semibold">
-            From responsive layouts that adapt flawlessly to any screen size, to
-            fluid animations that breathe life into static pages, each project
-            showcases my commitment to pushing the boundaries of what's possible
-            on the web.
+          From crafting intuitive user interfaces to building secure and scalable backends, each project reflects my commitment to innovation, performance, and impactful design — both in the interface and behind the scenes.
           </p>
         </div>
 
