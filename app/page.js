@@ -48,9 +48,7 @@ export default function Home() {
               Step into my digital playground!
             </span>
             <p className="">
-              As a frontend developer, I have a passion for crafting visually
-              stunning and user-friendly digital experiences. Let's collaborate
-              to create something extraordinary together!
+            As a developer, I have a passion for crafting visually stunning and user-friendly digital experiences, with a growing interest in cloud services to enhance scalability and performance. Let's collaborate to create something extraordinary together!
             </p>
 
             <div className="mt-8 flex gap-5 relative z-10">
