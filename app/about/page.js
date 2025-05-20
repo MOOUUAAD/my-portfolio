@@ -43,7 +43,7 @@ const About = () => {
             animate={toolsInView ? { x: 0 } : {}}
             transition={{ delay: 0.3 }}
           >
-            <img src="https://skillicons.dev/icons?i=next,react,tailwind,bootstrap,html,css,javascript,figma" />
+            <img src="https://skillicons.dev/icons?i=aws,next,react,tailwind,bootstrap,html,css,javascript,figma" />
             <br />
             <img src="https://skillicons.dev/icons?i=vite,typescript,nodejs,firebase,c,mysql,git,github" />
           </motion.div>
