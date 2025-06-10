@@ -47,7 +47,7 @@ export default function Home() {
             <span className="text-lg font-semibold my-6">
               Step into my digital playground!
             </span>
-            <p className="">
+            <p className="text-sm">
             As a developer, I have a passion for crafting visually stunning and user-friendly digital experiences, with a growing interest in cloud services to enhance scalability and performance. Let's collaborate to create something extraordinary together!
             </p>
 
