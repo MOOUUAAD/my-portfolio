@@ -117,7 +117,7 @@ const About = () => {
             }
           `}</style>
 
-          <div className="min-h-screen p-8 bg-gray-900">
+          <div className="min-h-screen p-8 ">
             <div className="my-14" ref={educationRef}>
               <motion.h1
                 className="font-bold text-4xl py-4 text-center text-white"
@@ -233,7 +233,7 @@ const About = () => {
                       {/* Content */}
                       <div className="relative z-10">
                         <time className="font-mono italic text-purple-400 text-sm">
-                          2022-2023
+                          2021-2023
                         </time>
                         <div className="text-lg font-black text-white mt-2">
                           MPSI/MP
