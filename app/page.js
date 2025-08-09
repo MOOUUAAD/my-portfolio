@@ -48,8 +48,7 @@ export default function Home() {
               Step into my digital playground!
             </span>
             <p className="text-sm">
-            As a developer, I have a passion for crafting visually stunning and user-friendly digital experiences, with a growing interest in cloud services to enhance scalability and performance. Let's collaborate to create something extraordinary together!
-            </p>
+            As a developer and cloud enthusiast, I focus on architecting and building modern solutions. My passion lies in driving digital transformation by creating scalable, high-performance applications that are both aesthetically pleasing and technically proficient.</p>
 
             <div className="mt-8 mb-8 flex gap-5 relative z-10">
             {/* <motion.button
