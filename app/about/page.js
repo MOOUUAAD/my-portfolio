@@ -75,6 +75,7 @@ const About = () => {
                   />
                 </svg>
               </div>
+
               <motion.div
                 className="timeline-start md:text-end mb-10"
                 initial={{ x: "-130%" }}
