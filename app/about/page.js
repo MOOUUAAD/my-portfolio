@@ -98,7 +98,7 @@ const About = () => {
         }
       `}</style>
       
-      <div className="min-h-screen p-8 bg-gray-50">
+      <div className="min-h-screen p-8">
         <div className="my-14" ref={educationRef}>
           <motion.h1
             className="font-bold text-4xl py-4 text-center text-gray-800"
