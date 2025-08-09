@@ -61,7 +61,7 @@ const About = () => {
           <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical my-4 md:my-8">
             <li>
               <hr />
-              <div className="timeline-middle">
+              <div className="timeline-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -120,7 +120,7 @@ const About = () => {
             </li>
 
             <li>
-              <div className="timeline-middle">
+              <div className="timeline-end">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
