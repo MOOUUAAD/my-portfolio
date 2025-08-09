@@ -77,8 +77,8 @@ const About = () => {
               </div>
               <motion.div
                 className="timeline-start md:text-end mb-10"
-                initial={{ y: "140%" }}
-                animate={educationInView ? { y: 0 } : {}}
+                initial={{ x: "-130%" }}
+                animate={educationInView ? { x: 0 } : {}}
                 transition={{ delay: 0.55 }}
               >
                 <time className="font-mono italic">2023-2026</time>
@@ -107,8 +107,8 @@ const About = () => {
               </div>
               <motion.div
                 className="timeline-start mb-10"
-                initial={{ y: "140%" }}
-                animate={educationInView ? { y: 0 } : {}}
+                initial={{ x: "130%" }}
+                animate={educationInView ? { x: 0 } : {}}
                 transition={{ delay: 0.45 }}
               >
                 <time className="font-mono italic">2022-2023</time>
@@ -135,7 +135,7 @@ const About = () => {
               </div>
               <motion.div
                 className="timeline-end md:text-end mb-10"
-                initial={{ y: "140%" }}
+                initial={{ y: "-140%" }}
                 animate={educationInView ? { y: 0 } : {}}
                 transition={{ delay: 0.35 }}
               >
