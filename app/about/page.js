@@ -143,7 +143,7 @@ const About = () => {
             <div className="flex-shrink-0 w-full md:w-6/12 relative">
               <div className="flex items-center">
                 {/* Icon */}
-                <div className="absolute left-6 md:left-0 transform -translate-x-1/2 md:translate-x-0 md:-translate-x-1/2 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center z-10 shadow-lg cursor-pointer transition-all duration-300 hover:scale-125 hover:shadow-xl hover:bg-blue-400">
+                <div className="absolute left-6 md:left-0 transform -translate-x-1/2 md:translate-x-0 md:-translate-x-1/2 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center z-10 shadow-lg cursor-pointer transition-all duration-100 hover:scale-125 hover:shadow-xl hover:bg-blue-400">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5 text-white transition-all duration-300 hover:scale-110"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
                 </div>
 
@@ -177,7 +177,7 @@ const About = () => {
             <div className="flex-shrink-0 w-full md:w-6/12 relative md:text-right">
               <div className="flex items-center">
                 {/* Icon */}
-                <div className="absolute left-6 md:left-auto md:right-0 transform -translate-x-1/2 md:translate-x-1/2 w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center z-10 shadow-lg cursor-pointer transition-all duration-300 hover:scale-125 hover:shadow-xl hover:bg-purple-400">
+                <div className="absolute left-6 md:left-auto md:right-0 transform -translate-x-1/2 md:translate-x-1/2 w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center z-10 shadow-lg cursor-pointer transition-all duration-100 hover:scale-125 hover:shadow-xl hover:bg-purple-400">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5 text-white transition-all duration-300 hover:scale-110"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
                 </div>
                 {/* Content Card */}
@@ -216,7 +216,7 @@ const About = () => {
             <div className="flex-shrink-0 w-full md:w-6/12 relative">
               <div className="flex items-center">
                 {/* Icon */}
-                <div className="absolute left-6 md:left-0 transform -translate-x-1/2 md:translate-x-0 md:-translate-x-1/2 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center z-10 shadow-lg cursor-pointer transition-all duration-300 hover:scale-125 hover:shadow-xl hover:bg-green-400">
+                <div className="absolute left-6 md:left-0 transform -translate-x-1/2 md:translate-x-0 md:-translate-x-1/2 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center z-10 shadow-lg cursor-pointer transition-all duration-100 hover:scale-125 hover:shadow-xl hover:bg-green-400">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5 text-white transition-all duration-300 hover:scale-110"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
                 </div>
                 {/* Content Card */}
