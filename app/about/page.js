@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 const About = () => {
   const toolsRef = useRef(null);
   const toolsInView = useInView(toolsRef, { once: true, amount: 0.5 });
-  
+
   const [educationInView, setEducationInView] = useState(false);
   const educationRef = useRef(null);
 
@@ -42,9 +42,9 @@ const About = () => {
           <h1 className="font-bold text-4xl py-4 text-center">ABOUT ME</h1>
           <p className="my-4 md:my-8 font-semibold">
             An architect-minded developer passionate about building scalable,
-            cloud-native solutions. I leverage full-stack expertise with modern
+            cloud-native solutions. <br/> I leverage full-stack expertise with modern
             frameworks and AWS infrastructure to deliver impactful products that
-            drive digital transformation.{" "}
+            drive digital transformation.
           </p>
         </div>
 
