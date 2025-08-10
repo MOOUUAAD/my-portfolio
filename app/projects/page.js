@@ -14,6 +14,14 @@ const Projects = () => {
       <div id="projects" className="">
         <div class="flex flex-col md:mx-40 gap-12 justify-center items-center my-6">
           <ProjectCard
+            title="End-to-End CI/CD Pipeline on AWS"
+            description="Automating the build, test, and deployment of a Java web application on the AWS ecosystem."
+            image="/images/aws-devop.png"
+            git="https://github.com/MOOUUAAD/aws-devops-web-project/blob/master/README.md"
+            link=""
+          />
+
+          <ProjectCard
             title="Three-Tier Web App on AWS"
             description="A fully functional, scalable Three-Tier Web Application by integrating a variety of powerful AWS services"
             image="/images/3-tier-app.png"
