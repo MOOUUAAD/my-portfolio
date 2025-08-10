@@ -211,7 +211,7 @@ const About = () => {
 
                     {/* Content - Left side */}
                     <motion.div
-                      className="mr-auto w-5/12 bg-slate-800 rounded-lg p-6 shadow-2xl border border-purple-500 border-opacity-30 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/20 hover:shadow-2xl relative overflow-hidden group"
+                      className="mr-auto w-5/12 rounded-lg p-6 cursor-pointer transform transition-all duration-300 hover:scale-105 relative overflow-hidden group"
                       initial={{ x: "-130%" }}
                       animate={educationInView ? { x: 0 } : {}}
                       transition={{ delay: 0.45 }}
@@ -226,8 +226,11 @@ const About = () => {
                         }
                         transition={{ delay: 1.2, duration: 1 }}
                       >
-                        <div className="absolute inset-0 rounded-lg border-2 border-purple-400 border-opacity-50"></div>
-                        <div className="absolute inset-0 rounded-lg shimmer-purple"></div>
+                        <div className="absolute inset-0 rounded-lg border-2 border-purple-400"></div>
+                        <div className="absolute top-0 left-0 w-full h-0.5 rounded-lg shimmer-purple"></div>
+                        <div className="absolute top-0 right-0 w-0.5 h-full rounded-lg shimmer-purple"></div>
+                        <div className="absolute bottom-0 left-0 w-full h-0.5 rounded-lg shimmer-purple"></div>
+                        <div className="absolute top-0 left-0 w-0.5 h-full rounded-lg shimmer-purple"></div>
                       </motion.div>
 
                       {/* Content */}
@@ -265,7 +268,7 @@ const About = () => {
 
                     {/* Content - Right side */}
                     <motion.div
-                      className="ml-auto w-5/12 bg-slate-800 rounded-lg p-6 shadow-2xl border border-green-500 border-opacity-30 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-green-500/20 hover:shadow-2xl relative overflow-hidden group"
+                      className="ml-auto w-5/12 rounded-lg p-6 cursor-pointer transform transition-all duration-300 hover:scale-105 relative overflow-hidden group"
                       initial={{ x: "130%" }}
                       animate={educationInView ? { x: 0 } : {}}
                       transition={{ delay: 0.55 }}
@@ -280,8 +283,11 @@ const About = () => {
                         }
                         transition={{ delay: 1.6, duration: 1 }}
                       >
-                        <div className="absolute inset-0 rounded-lg border-2 border-green-400 border-opacity-50"></div>
-                        <div className="absolute inset-0 rounded-lg shimmer-green"></div>
+                        <div className="absolute inset-0 rounded-lg border-2 border-green-400"></div>
+                        <div className="absolute top-0 left-0 w-full h-0.5 rounded-lg shimmer-green"></div>
+                        <div className="absolute top-0 right-0 w-0.5 h-full rounded-lg shimmer-green"></div>
+                        <div className="absolute bottom-0 left-0 w-full h-0.5 rounded-lg shimmer-green"></div>
+                        <div className="absolute top-0 left-0 w-0.5 h-full rounded-lg shimmer-green"></div>
                       </motion.div>
 
                       {/* Content */}
