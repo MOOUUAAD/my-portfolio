@@ -3,9 +3,9 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const About = () => {
-  const toolsRef = useRef();
-  const toolsInView = useInView(toolsRef, { amount: 0.5 });
-
+  const toolsRef = useRef(null);
+  const toolsInView = useInView(toolsRef, { once: true, amount: 0.5 });
+  
   const [educationInView, setEducationInView] = useState(false);
   const educationRef = useRef(null);
 
