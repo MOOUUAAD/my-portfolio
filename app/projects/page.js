@@ -16,7 +16,7 @@ const Projects = () => {
           <ProjectCard
             title="End-to-End CI/CD Pipeline on AWS"
             description="Automating the build, test, and deployment of a Java web application on the AWS ecosystem."
-            image="/images/aws-devop.png"
+            image="/images/aws-devops.png"
             git="https://github.com/MOOUUAAD/aws-devops-web-project/blob/master/README.md"
             link=""
           />
