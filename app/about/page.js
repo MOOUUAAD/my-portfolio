@@ -40,7 +40,7 @@ const About = () => {
       <div className="p-12 lg:p-20 xl:p-28 xl:pb-3 pt-20 flex flex-col justify-between gap-40 ">
         <div className="mb-8">
           <h1 className="font-bold text-4xl py-4 text-center">ABOUT ME</h1>
-          <p className="my-4 md:my-8 font-semibold">
+          <p className="my-4 md:my-8 font-semibold text-center">
             An architect-minded developer passionate about building scalable,
             cloud-native solutions. <br/> I leverage full-stack expertise with modern
             frameworks and AWS infrastructure to deliver impactful products that
@@ -164,7 +164,7 @@ const About = () => {
                   </motion.div>
                   <div className="relative z-10">
                     <time className="font-mono italic text-white text-sm">2023-2026</time>
-                    <div className="text-lg font-black text-white mt-2">Computer Science and Digitalisation</div>
+                    <div className="text-lg font-black text-white mt-2">Master's degree in Computer Science and Digitalisation</div>
                     <div className="text-white mt-1">Ecole Mohammadia d'Ingenieurs - Rabat</div>
                   </div>
                 </motion.div>
