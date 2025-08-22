@@ -58,7 +58,7 @@ const FeatureCard = ({
           <img
             src={logoImage}
             alt={title}
-            className="w-14 h-14 object-cover rounded group-hover:brightness-0 group-hover:invert transition-all duration-1000"
+            className="w-14 h-14 object-cover rounded "
           />
         </div>
 
@@ -75,7 +75,7 @@ const FeatureCard = ({
         {/* Learn More Link */}
         <button
           onClick={onCredentialsClick}
-          className="flex justify-start items-center gap-3 text-green-900 text-sm font-semibold leading-[22px] transition-all duration-1000 mt-4 group-hover:text-white cursor-pointer bg-transparent border-none p-0"
+          className="flex justify-start items-center gap-3 text-white text-sm font-semibold leading-[22px] transition-all duration-1000 mt-4 group-hover:text-white cursor-pointer bg-transparent border-none p-0"
           style={{ color: hoverColor === "#23c55e" ? "#072713" : hoverColor }}
         >
           See credentials
@@ -85,7 +85,7 @@ const FeatureCard = ({
             viewBox="0 0 18 19"
             height="19"
             width="18"
-            className="group-hover:brightness-0 group-hover:invert transition-all duration-1000"
+            className=" transition-all duration-1000"
           >
             <path
               stroke="#072713"
