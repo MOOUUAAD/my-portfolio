@@ -75,8 +75,7 @@ const FeatureCard = ({
         {/* Learn More Link */}
         <button
           onClick={onCredentialsClick}
-          className="flex justify-start items-center gap-3 text-white text-sm font-semibold leading-[22px] transition-all duration-1000 mt-4 group-hover:text-white cursor-pointer bg-transparent border-none p-0"
-          style={{ color: hoverColor === "#23c55e" ? "#072713" : hoverColor }}
+          className="flex justify-start items-center gap-3 text-white text-sm font-semibold leading-[22px] transition-all duration-1000 mt-4 cursor-pointer bg-transparent border-none p-0"
         >
           See credentials
           <svg
