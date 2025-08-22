@@ -58,7 +58,7 @@ const FeatureCard = ({
           <img
             src={logoImage}
             alt={title}
-            className="w-7 h-7 object-cover rounded group-hover:brightness-0 group-hover:invert transition-all duration-1000"
+            className="w-14 h-14 object-cover rounded group-hover:brightness-0 group-hover:invert transition-all duration-1000"
           />
         </div>
 
