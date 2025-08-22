@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const FeatureCard = ({ 
-  logoImage, 
-  title, 
-  subtitle, 
+const FeatureCard = ({
+  logoImage,
+  title,
+  subtitle,
   hoverColor = "#23c55e",
   credentialsLink,
-  onCredentialsClick 
+  onCredentialsClick,
 }) => {
   return (
     <div className="relative flex flex-col items-start p-7 max-w-[340px] rounded-[30px] bg-white shadow-lg transition-all duration-1000 overflow-hidden group hover-card">
@@ -47,19 +47,19 @@ const FeatureCard = ({
           background: ${hoverColor} !important;
         }
       `}</style>
-      
+
       <div className="relative z-10">
         {/* Icon */}
-        <div className="flex justify-center items-center w-14 h-14 rounded-md transition-all duration-1000 icon" 
-             style={{ 
-               backgroundColor: `${hoverColor}20`
-             }}>
-          <img 
-            src={logoImage} 
+        <div
+          className="flex justify-center items-center w-14 h-14 rounded-md transition-all duration-1000 icon"
+          style={{
+            backgroundColor: `${hoverColor}20`,
+          }}
+        >
+          <img
+            src={logoImage}
             alt={title}
-            width="28" 
-            height="28" 
-            className="group-hover:brightness-0 group-hover:invert transition-all duration-1000"
+            className="w-7 h-7 object-cover rounded group-hover:brightness-0 group-hover:invert transition-all duration-1000"
           />
         </div>
 
@@ -74,7 +74,7 @@ const FeatureCard = ({
         </p>
 
         {/* Learn More Link */}
-        <button 
+        <button
           onClick={onCredentialsClick}
           className="flex justify-start items-center gap-3 text-green-900 text-sm font-semibold leading-[22px] transition-all duration-1000 mt-4 group-hover:text-white cursor-pointer bg-transparent border-none p-0"
           style={{ color: hoverColor === "#23c55e" ? "#072713" : hoverColor }}
@@ -149,14 +149,14 @@ const FeatureCard = ({
               d="M9.25 9.34985L15.25 15.3499"
             />
           </svg>
-          </button>
-        </div>
+        </button>
       </div>
+    </div>
   );
 };
 
 // Example usage:
-// <FeatureCard 
+// <FeatureCard
 //   logoImage="https://example.com/logo.png"
 //   title="Easy For Everyone"
 //   subtitle="Every year, we award travelers' favorite destinations, hotels, restaurants, and things to"

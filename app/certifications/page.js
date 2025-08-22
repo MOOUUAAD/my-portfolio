@@ -12,9 +12,9 @@ const Certifications = () => {
       transition={{ delay: 0.5, duration: 1 }}
     >
       <div id="projects" className="">
-        <div class="flex md:mx-10 gap-10 my-6">
+        <div class="flex flex-col md:flex-row mx-10 md:mx-20 gap-10 my-6">
           <FeatureCard
-            logoImage="https://web-assets.bcg.com/dims4/default/de4522a/2147483647/strip/true/crop/843x474+0+183/resize/1200x675!/format/webp/quality/90/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2Fc7%2F61%2F278ef73b486fa33e88de8ef2491c%2Fsource-homepage-thumbnail.jpg"
+            logoImage="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/BCG_Corporate_Logo.jpg/600px-BCG_Corporate_Logo.jpg?20181127202412"
             title="BCG"
             subtitle="BCG Digital Transformation"
             hoverColor="#147B58	"
