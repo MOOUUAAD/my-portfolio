@@ -5,11 +5,10 @@ const FeatureCard = ({
   title,
   subtitle,
   hoverColor = "#23c55e",
-  credentialsLink,
   onCredentialsClick,
 }) => {
   return (
-    <div className="relative flex flex-col items-start p-7 max-w-[340px] rounded-[30px] bg-white shadow-lg transition-all duration-1000 overflow-hidden group hover-card">
+    <div className="relative flex flex-col items-start p-7 max-w-[340px] rounded-[30px] bg-black shadow-lg transition-all duration-1000 overflow-hidden group hover-card">
       {/* CSS for complex hover effects that can't be done with Tailwind alone */}
       <style jsx>{`
         .hover-card::after {
@@ -64,12 +63,12 @@ const FeatureCard = ({
         </div>
 
         {/* Title */}
-        <h3 className="text-gray-800 text-[26px] font-medium whitespace-nowrap transition-all duration-1000 my-4 group-hover:text-white">
+        <h3 className="text-white text-[26px] font-medium whitespace-nowrap transition-all duration-1000 my-4 group-hover:text-white">
           {title}
         </h3>
 
         {/* Subtitle */}
-        <p className="text-gray-500 text-sm font-normal leading-[22px] transition-all duration-1000 group-hover:text-white">
+        <p className="text-white text-sm font-normal leading-[22px] transition-all duration-1000 group-hover:text-white">
           {subtitle}
         </p>
 
@@ -82,7 +81,7 @@ const FeatureCard = ({
           See credentials
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
+            fill="white"
             viewBox="0 0 18 19"
             height="19"
             width="18"
