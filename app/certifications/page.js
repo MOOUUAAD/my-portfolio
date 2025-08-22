@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import ProjectCard from "../components/ProjectCard";
+import CertifCard from "../components/CertifCard";
 
 const Certifications = () => {
   return (
@@ -13,7 +13,7 @@ const Certifications = () => {
     >
       <div id="projects" className="">
         <div class="flex flex-col md:mx-40 gap-12 justify-center items-center my-6">
-          
+<CertifCard />
         </div>
       </div>
     </motion.div>
