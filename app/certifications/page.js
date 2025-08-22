@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import CertifCard from "../components/CertifCard";
+import FeatureCard from "../components/CertifCard";
 
 const Certifications = () => {
   return (
@@ -13,7 +13,15 @@ const Certifications = () => {
     >
       <div id="projects" className="">
         <div class="flex flex-col md:mx-40 gap-12 justify-center items-center my-6">
-<CertifCard />
+          <FeatureCard
+            logoImage="https://example.com/logo.png"
+            title="BCG X"
+            subtitle="Certif for data analysis"
+            hoverColor="#147B58	"
+            onCredentialsClick={() =>
+              window.open("https://credentials-link.com", "_blank")
+            }
+          />
         </div>
       </div>
     </motion.div>
