@@ -3,7 +3,7 @@ import React from "react";
 const FeatureCard = ({
   logoImage,
   title,
-  hoverColor = "#23c55e",
+  hoverColor,
   onCredentialsClick,
 }) => {
   return (
@@ -62,7 +62,7 @@ const FeatureCard = ({
         </div>
 
         {/* Title */}
-        <h3 className="text-white text-[26px] font-medium whitespace-nowrap transition-all duration-1000 my-4 group-hover:text-white">
+        <h3 className="text-white text-[20px] font-medium whitespace-nowrap transition-all duration-1000 my-4 group-hover:text-white">
           {title}
         </h3>
 
