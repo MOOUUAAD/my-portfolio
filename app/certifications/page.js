@@ -18,7 +18,21 @@ const Certifications = () => {
             title="BCG Digital Transformation"
             hoverColor="#147B58"
             onCredentialsClick={() =>
-              window.open("https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/cT6tMKSaMryk6PGaF_SKZxezskWgmFjRvj9_78ii8yWqSBSdo6bLf_1754767893106_completion_certificate.pdf", "_blank")
+              window.open(
+                "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/cT6tMKSaMryk6PGaF_SKZxezskWgmFjRvj9_78ii8yWqSBSdo6bLf_1754767893106_completion_certificate.pdf",
+                "_blank"
+              )
+            }
+          />
+          <FeatureCard
+            logoImage="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/BCG_Corporate_Logo.jpg/600px-BCG_Corporate_Logo.jpg?20181127202412"
+            title="BCG Strategy Consulting"
+            hoverColor="#147B58"
+            onCredentialsClick={() =>
+              window.open(
+                "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/ntTvo6ru6Tq3A2JPq_SKZxezskWgmFjRvj9_78ii8yWqSBSdo6bLf_1753899324321_completion_certificate.pdf",
+                "_blank"
+              )
             }
           />
         </div>
