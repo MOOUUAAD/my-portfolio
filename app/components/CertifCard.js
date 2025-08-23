@@ -7,7 +7,7 @@ const FeatureCard = ({
   onCredentialsClick,
 }) => {
   return (
-    <div className="relative flex flex-col items-start p-7 max-w-[340px] rounded-[30px] bg-black shadow-lg transition-all duration-1000 overflow-hidden group hover-card">
+    <div className="relative flex flex-col items-start p-7 max-w-[340px] rounded-[30px] bg-black shadow-lg transition-all duration-1000 group hover-card">
       {/* CSS for complex hover effects that can't be done with Tailwind alone */}
       <style jsx>{`
         .hover-card::after {
@@ -26,7 +26,7 @@ const FeatureCard = ({
           content: "";
           position: absolute;
           bottom: -160%;
-          left: 50%;
+          left: 50%;a
           transform: translate(-50%, -50%);
           width: 0;
           height: 0;
@@ -39,7 +39,7 @@ const FeatureCard = ({
           bottom: -230%;
           width: 1000px;
           height: 1000px;
-          filter: blur(1px);
+          filter: blur(3px);
         }
         .hover-card:hover .icon {
           background: ${hoverColor} !important;
@@ -62,7 +62,7 @@ const FeatureCard = ({
         </div>
 
         {/* Title */}
-        <h3 className="text-white text-[20px] font-medium whitespace-nowrap transition-all duration-1000 my-4 group-hover:text-white">
+        <h3 className="text-white text-[20px] font-medium transition-all duration-1000 my-4 group-hover:text-white">
           {title}
         </h3>
 
