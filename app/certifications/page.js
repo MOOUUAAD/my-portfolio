@@ -12,7 +12,7 @@ const Certifications = () => {
       transition={{ delay: 0.5, duration: 1 }}
     >
 
-        <div class="flex flex-col md:flex-row justify-center md:justify-start gap-8 my-6">
+        <div class="flex flex-col md:flex-row justify-center items-center md:justify-start gap-8 my-6">
           <FeatureCard
             logoImage="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/BCG_Corporate_Logo.jpg/600px-BCG_Corporate_Logo.jpg?20181127202412"
             title="BCG Digital Transformation"
