@@ -39,7 +39,7 @@ const FeatureCard = ({
           bottom: -230%;
           width: 1000px;
           height: 1000px;
-          filter: blur(3px);
+          filter: blur(1px);
         }
         .hover-card:hover .icon {
           background: ${hoverColor} !important;
