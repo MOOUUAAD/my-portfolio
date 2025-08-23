@@ -49,7 +49,7 @@ const FeatureCard = ({
       <div className="relative z-10">
         {/* Icon */}
         <div
-          className="flex justify-center items-center w-14 h-14 rounded-md transition-all duration-1000 icon"
+          className="flex justify-center items-center w-14 h-14 rounded-sm transition-all duration-1000 icon"
           style={{
             backgroundColor: `${hoverColor}20`,
           }}
