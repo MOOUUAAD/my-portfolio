@@ -3,7 +3,6 @@ import React from "react";
 const FeatureCard = ({
   logoImage,
   title,
-  subtitle,
   hoverColor = "#23c55e",
   onCredentialsClick,
 }) => {
@@ -67,10 +66,6 @@ const FeatureCard = ({
           {title}
         </h3>
 
-        {/* Subtitle */}
-        <p className="text-white text-sm font-normal leading-[22px] transition-all duration-1000 group-hover:text-white">
-          {subtitle}
-        </p>
 
         {/* Learn More Link */}
         <button
