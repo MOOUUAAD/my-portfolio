@@ -24,7 +24,7 @@ const Certifications = () => {
           }
         />
         <FeatureCard
-          logoImage="https://w0.peakpx.com/wallpaper/458/447/HD-wallpaper-google-black-blue-green-logo-red-super-amoled-yellow.jpg"
+          logoImage="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png"
           title="Google UX Design Professional"
           hoverColor="#EA4335"
           onCredentialsClick={() =>
