@@ -69,6 +69,17 @@ const Certifications = () => {
             )
           }
         />
+        <FeatureCard
+          logoImage="https://arcx.io/img/seo/arcxog.jpg"
+          title="CYBER THREAT INTELLIGENCE 101"
+          hoverColor="#0c0c1c"
+          onCredentialsClick={() =>
+            window.open(
+              "https://www.credly.com/badges/6e3aa9d1-2b3a-4af2-a592-86cc416298c2/public_urlhttps://members.arcx.io/courses/foundation-threat-intelligence-analyst/aa87ed52-f9ae-4086-b9e9-17296e6c4a1d",
+              "_blank"
+            )
+          }
+        />
       </div>
     </motion.div>
   );
