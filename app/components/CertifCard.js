@@ -3,7 +3,7 @@ import React from "react";
 const FeatureCard = ({
   logoImage,
   title,
-  hoverColor,
+  hoverColor ,
   onCredentialsClick,
 }) => {
   return (
@@ -26,7 +26,7 @@ const FeatureCard = ({
           content: "";
           position: absolute;
           bottom: -160%;
-          left: 50%;a
+          left: 50%;
           transform: translate(-50%, -50%);
           width: 0;
           height: 0;
