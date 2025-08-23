@@ -18,9 +18,9 @@ const FeatureCard = ({
           width: 120px;
           height: 120px;
           background: ${hoverColor};
-          filter: blur(70px);
+          filter: blur(60px);
           border-radius: 50%;
-          transition: width 1s, height 1s;
+          transition: width 1.5s, height 1.5s;
         }
         .hover-card::before {
           content: "";
@@ -37,8 +37,8 @@ const FeatureCard = ({
         }
         .hover-card:hover::before {
           bottom: -230%;
-          width: 1000px;
-          height: 1000px;
+          width: 1500px;
+          height: 1500px;
           filter: blur(1px);
         }
         .hover-card:hover .icon {
