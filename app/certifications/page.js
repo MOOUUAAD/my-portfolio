@@ -24,6 +24,17 @@ const Certifications = () => {
           }
         />
         <FeatureCard
+          logoImage="https://static.vecteezy.com/system/resources/previews/054/848/720/non_2x/google-logo-on-black-rounded-shape-free-png.png"
+          title="Google UX Design Professional"
+          hoverColor="#EA4335"
+          onCredentialsClick={() =>
+            window.open(
+              "https://www.credly.com/badges/6e3aa9d1-2b3a-4af2-a592-86cc416298c2/public_url",
+              "_blank"
+            )
+          }
+        />
+        <FeatureCard
           logoImage="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/BCG_Corporate_Logo.jpg/600px-BCG_Corporate_Logo.jpg?20181127202412"
           title="BCG Digital Transformation"
           hoverColor="#147B58"
