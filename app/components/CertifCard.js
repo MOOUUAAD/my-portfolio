@@ -7,7 +7,7 @@ const FeatureCard = ({
   onCredentialsClick,
 }) => {
   return (
-    <div className="relative flex flex-col items-start p-7 max-w-[340px] rounded-[30px] bg-black shadow-lg transition-all duration-1000 group hover-card">
+    <div className="relative flex flex-col items-start p-7 max-w-[340px] rounded-[30px] bg-black shadow-lg transition-all duration-1000 overflow-hidden group hover-card">
       {/* CSS for complex hover effects that can't be done with Tailwind alone */}
       <style jsx>{`
         .hover-card::after {
